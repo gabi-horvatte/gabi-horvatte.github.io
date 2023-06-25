@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+
+* {
+  margin: 0;
+  font-family: 'Roboto', sans-serif !important;
+  line-height: 1.4;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.03) !important;
+}
+
+#initial-content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fff;
+}
+
+#page-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 3vh;
+}
+
+#logo {
+  margin: 0;
+  font-family: 'Amatic SC', cursive !important;
+  font-weight: bold;
+}
+
+#entry-section {
+  background-image: url(images/backgroud-image.jpg);
+  background-size: cover;
+  display: flex;
+  flex-basis: 100%;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#entry-section > h1 {
+  font-size: 6vw;
+}
+#entry-section > h5 {
+  color:#435d61
+}
+
+#main-content {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  border-style: none solid; 
+  border-width: 1px;
+  text-align: center;
+  width: 80%;
+  padding: 4vh 3dvw;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+#business-carousel {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  color: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  height: 80vh;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+}
+
+.carousel-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2vh;
+}
+
+.carousel-item-text {
+  flex-grow: 5;
+}
+
+#page-footer {
+  padding: 5vh 0;
+  background-color: #fff;
+  width: 100%;
+  border-style: solid none none none;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.2) ;
+  text-align: center;
+}
