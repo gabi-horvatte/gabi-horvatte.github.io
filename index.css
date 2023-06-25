@@ -101,10 +101,6 @@ body {
   gap: 2vh;
 }
 
-.carousel-item-text {
-  flex-grow: 5;
-}
-
 #page-footer {
   padding: 5vh 0;
   background-color: #fff;
